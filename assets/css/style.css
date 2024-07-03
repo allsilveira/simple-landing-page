@@ -1,3 +1,9 @@
+:root {
+    --primaty-color: #0A1128;
+    --white: #FFFFFF;
+    --gap: 3rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,8 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--primaty-color);
 }
 
 h1,
@@ -55,8 +62,20 @@ h6 {
     background-image: url('../img/background-main.svg');
     background-size: cover;
     background-position: center center;
+    color: var(--white);
+}
+
+.white-bg {
+    background-color: var(--white);
+    color: var(--primaty-color)
 }
 
 .main-content {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.container {
+    min-height: 100vh;
 }
