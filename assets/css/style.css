@@ -26,36 +26,31 @@ h4,
 h5,
 h6 {
     font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 6rem;
-    text-transform: uppercase;
 }
 
 h2 {
     font-size: 5.5rem;
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: 5rem;
-    text-transform: uppercase;
 }
 
 h4 {
     font-size: 4.5rem;
-    text-transform: uppercase;
 }
 
 h5 {
     font-size: 4rem;
-    text-transform: uppercase;
 }
 
 h6 {
     font-size: 3.5rem;
-    text-transform: uppercase;
 }
 
 .main-bg {
@@ -78,4 +73,13 @@ h6 {
 
 .container {
     min-height: 100vh;
+}
+
+.menu {
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
