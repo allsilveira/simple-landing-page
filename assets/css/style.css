@@ -14,6 +14,7 @@
     max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
+    z-index: 0;
 }
 
 .container {
@@ -30,6 +31,7 @@
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
 }
 
 .menu-content {
@@ -77,4 +79,31 @@
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.header-content {
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.header-text,
+.header-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.header-text h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+.header-img img {
+    max-width: 100%;
+    height: auto;
 }
