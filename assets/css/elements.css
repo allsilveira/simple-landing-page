@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -79,6 +80,7 @@ table caption {
 
 table td,
 table th {
+    white-space: nowrap;
     padding: 1rem;
     text-align: left;
     border: 0.1rem solid var(--light-gray-color)
