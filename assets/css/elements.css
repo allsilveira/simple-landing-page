@@ -60,15 +60,16 @@ p {
     margin-bottom: 3rem;
 }
 
-.responsive-table {
-    overflow: hidden;
-    overflow-x: auto;
-}
-
 table {
     min-width: 360px;
     width: 100%;
     border-collapse: collapse;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
 }
 
 table caption {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/script.js" defer></script>
     <title>Landing Page</title>
     <link rel="stylesheet" href="./assets/css/elements.css">
     <link rel="stylesheet" href="./assets/css/variables.css">
@@ -16,11 +17,16 @@
 </head>
 
 <body>
+    <input class="close-menu" type="checkbox" name="close-menu" id="close-menu" role="button" aria-label="Close menu">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#home">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">LOGO</a>
+            </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top 3</a></li>
                     <li><a href="#gallery">galeria</a></li>
@@ -96,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section id="work" class="grid container main-bg">
+    <section id="work" class="container main-bg">
         <div class="main-content grid-content">
             <h2 class="title-top3">TOP 3 trabalhos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -228,6 +234,7 @@
     <footer class="footer white-bg">
         <p>Feito por Alessandra Silveira</p>
     </footer>
+    <a class="back-to-top" href="#home">🠕</a>
 </body>
 
 </html>
